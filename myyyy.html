@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Spacio Interiors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2A3D45',
+                        secondary: '#DDB892',
+                        accent: '#E8D7C3',
+                        light: '#F5F5F5',
+                        dark: '#1A2026',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+.about-hero {
+    background-image:url('https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-d849ade/www.decorilla.com/online-decorating/wp-content/uploads/2023/12/Modern-interior-design-ideas-for-a-living-room-by-Decorilla-2048x1148.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+}
+
+
+        .team-member {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .achievement-card {
+            transition: all 0.3s ease;
+        }
+        
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .timeline-item {
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #DDB892;
+        }
+        
+        .timeline-item:last-child::before {
+            height: 50%;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: 8px;
+            top: 24px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #DDB892;
+            z-index: 1;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .animate-slideUp {
+            animation: slideUp 0.8s ease forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        
+        .value-card {
+            transition: all 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-primary bg-light">
+    
+
+   <section class="about-hero min-h-[60vh] flex items-center pt-16">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center text-white">
+      <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6 animate-fadeIn">
+        About Decorilla Interiors
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 animate-fadeIn delay-100">
+        Transforming spaces into extraordinary experiences since 2010.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Who We Are Section -->
+<section class="py-24 bg-[#f9f6f2]">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-4">Who We Are</h2>
+        <div class="w-24 h-1 bg-[#bfa980] mx-auto mb-6"></div>
+        <p class="text-gray-500 max-w-xl mx-auto text-lg">
+          Creating timeless interiors tailored to your lifestyle.
+        </p>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="bg-white rounded-2xl shadow-lg p-6 flex justify-center items-center h-64 max-w-2xl mx-auto hover:shadow-2xl transition-all duration-300">
+  <div class="w-full max-w-[360px]">
+        
+       <svg viewBox="0 0 139.874 26" width="250" height="35" xmlns="http://www.w3.org/2000/svg">
+  <path d="M31.7546 6.17383V19.8591H37.1476C41.434 19.8591 44.4273 17.0459 44.4273 13.017C44.4273 8.98815 41.434 6.17492 37.1476 6.17492H31.7546V6.17383ZM43.6317 13.0159C43.6317 16.6923 40.9942 19.1629 37.0679 19.1629H32.5491V6.86895H37.0679C40.9942 6.86895 43.6317 9.33953 43.6317 13.0159Z" fill="#333333"></path>
+  <path d="M48.1199 13.2451H55.5283V12.5696H48.1199V6.87004H56.4024V6.17383H47.3254V19.8591H56.7003V19.164H48.1199V13.2451Z" fill="#333333"></path>
+  <path d="M69.776 8.39311L70.2627 7.89114C69.118 6.71914 67.42 6.07422 65.4689 6.07422C63.5177 6.07422 61.6954 6.77589 60.3913 8.04937C59.0873 9.32395 58.3682 11.0874 58.3682 13.0156C58.3682 14.9439 59.0862 16.7084 60.3913 17.9819C61.6954 19.2554 63.4981 19.957 65.4689 19.957C67.4397 19.957 69.1071 19.3056 70.2627 18.1205L69.776 17.6185C68.6411 18.6956 67.2062 19.2423 65.5082 19.2423C61.8907 19.2423 59.1626 16.5654 59.1626 13.0156C59.1626 9.46581 61.8907 6.78898 65.5082 6.78898C67.2433 6.78898 68.6401 7.31387 69.776 8.39202V8.39311Z" fill="#333333"></path>
+  <path d="M78.5764 6.07422C76.5991 6.07422 74.7898 6.77807 73.4814 8.05701C72.1752 9.33268 71.4561 11.0939 71.4561 13.0167C71.4561 14.9395 72.1752 16.6997 73.4814 17.9764C74.7898 19.2543 76.5991 19.9592 78.5764 19.9592C80.5538 19.9592 82.3554 19.2575 83.6638 17.9841C84.9744 16.7084 85.6968 14.9449 85.6968 13.0178C85.6968 11.0907 84.9744 9.32613 83.6638 8.05155C82.3554 6.77807 80.5483 6.0764 78.5764 6.0764V6.07422ZM78.5764 19.2423C74.9699 19.2423 72.2505 16.5654 72.2505 13.0156C72.2505 9.46581 74.9699 6.78898 78.5764 6.78898C82.183 6.78898 84.8827 9.46581 84.8827 13.0156C84.8827 16.5654 82.1721 19.2423 78.5764 19.2423Z" fill="#333333"></path>
+  <path d="M95.7848 14.9965C97.8353 14.3854 98.9636 12.8773 98.9636 10.7516C98.9636 7.8849 96.911 6.17383 93.4714 6.17383H88.5957V19.8591H89.3901V15.3108H93.4714C93.8904 15.3108 94.3149 15.2792 94.8071 15.2126L94.8725 15.2039L98.1954 19.8591H99.0793L95.6375 15.0413L95.7837 14.9976L95.7848 14.9965ZM93.4725 14.6342H89.3912V6.86895H93.4725C96.4887 6.86895 98.1496 8.24828 98.1496 10.7516C98.1496 13.2549 96.445 14.6342 93.4725 14.6342Z" fill="#333333"></path>
+  <path d="M102.856 6.17383H102.062V19.8591H102.856V6.17383Z" fill="#333333"></path>
+  <path d="M107.88 6.17383H107.086V19.8591H115.884V19.164H107.88V6.17383Z" fill="#333333"></path>
+  <path d="M118.665 19.164V6.17383H117.87V19.8591H126.17L126.491 19.164H118.665Z" fill="#333333"></path>
+  <path d="M126.888 19.8591H127.263L129.031 15.9459H137.235L139.022 19.8591H139.874L133.579 6.17383H132.706L126.831 18.9447H126.886V19.858L126.888 19.8591ZM133.133 6.91369L136.958 15.3108H129.33L133.133 6.91369Z" fill="#333333"></path>
+  <path d="M126.411 19.8586H126.668V19.2988L126.411 19.8586Z" fill="#333333"></path>
+  <path d="M126.887 19.8587V18.9453H126.832L126.778 19.061V19.8587H126.887Z" fill="#333333"></path>
+  <path d="M126.669 19.8602H126.778V19.0625L126.669 19.3004V19.8602Z" fill="#333333"></path>
+  <path d="M0 26H26V0H0V26ZM25.2121 25.2121L11.5727 25.1761L11.6185 25.1565L11.6436 24.971L11.7243 24.9808L11.7091 25.1161L11.7494 25.0986C12.7097 24.6752 13.5827 24.0969 14.3444 23.3777C16.1111 21.6994 17.0845 19.3139 17.0845 16.6611C17.0878 15.7019 16.9241 14.6565 16.6098 13.6373L16.5935 13.5838H25.2143L25.2132 25.211L25.2121 25.2121ZM13.395 0.817343L25.2132 0.787879V12.797H16.3174L16.3065 12.7719C15.8853 11.7887 15.1825 10.811 14.2757 9.9467L14.2069 9.88122C13.9483 9.63569 13.7049 9.40326 13.4114 9.19046L13.3939 9.17846V0.817343H13.395ZM0.78897 0.787879L12.6006 0.817343V8.65248L12.5395 8.61865C11.0805 7.79585 9.36397 7.35826 7.43792 7.3168L0.78897 7.31243V0.787879ZM0.78897 8.12323H7.02434C9.78301 8.12323 12.0004 8.90238 13.6166 10.4388C15.3396 12.0779 16.289 14.2658 16.289 16.5978C16.289 19.1001 15.4018 21.3229 13.7912 22.855C12.4326 24.1482 10.4683 24.9502 8.10904 25.1728L1.16108 25.2132H0.787879V8.12214L0.78897 8.12323Z" fill="#333333"></path>
+</svg>
+           
+        </div>
+      </div>
+
+        <!-- Text Content -->
+        <div class="animate-slideUp delay-200">
+          <h3 class="text-3xl font-serif font-bold text-gray-800 mb-4">Our Story</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            At <span class="text-[#bfa980] font-semibold">Decorilla Interiors</span>, we believe that every home has a story to tell. Founded in 2010 by a group of visionary designers and architects, our mission has always been to blend art and function with elegance and comfort.
+          </p>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            We bring concepts to life with creativity, precision, and a deep understanding of our clients’ needs. Whether it’s a chic studio apartment or a grand villa, our designs transform spaces into personalized sanctuaries.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            With over <strong>500+ successful projects</strong> across India, we’ve crafted interiors that are not just beautiful — they’re meaningful, lasting, and deeply personal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Our Team Section -->
+<section class="py-20 bg-light">
+  <div class="container mx-auto px-4">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Team</h2>
+      <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Our diverse team brings together expertise from various design disciplines to create holistic, innovative solutions for every project.
+      </p>
+    </div>
+
+    <!-- Team Members Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
+      
+      <!-- Team Member Card (Use same layout for all 4) -->
+      <!-- Emily Johnson -->
+      <div class="team-member bg-white rounded-2xl overflow-hidden shadow-xl transition-transform transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+        <div class="h-64 relative">
+          <img
+            src="https://cdn.prod.website-files.com/650865454c2393ac25711ff7/6759fdcaa86f256290c5aebe_AD_4nXeAMU2TYDzXqc4m9ETG3Lyv1STq95ydzq_9Mw9-yyv7R9miLXYRfudww4D_9WF_V0ugO47wdnlsIjK_6khceKPDz687e3uQZpDfu42f4Mq7UC-ynWuqQJgn1i0gs_Pw4dnb8-FyVw.png"
+            alt="Emily Johnson"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">Emily Johnson</h3>
+          <p class="text-sm text-primary mb-2">Founder & Creative Director</p>
+          <p class="text-sm text-gray-600 mb-4">Leads our creative vision with over 15 years of design experience.</p>
+          
+        </div>
+      </div>
+
+      <!-- David Chen -->
+      <div class="team-member bg-white rounded-2xl overflow-hidden shadow-xl transition-transform transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+        <div class="h-64 relative">
+          <img
+            src="https://www.aipassportphotos.com/blog/wp-content/uploads/2023/09/handsome-young-guy-with-glasses-posing.jpg"
+            alt="David Chen"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">David Chen</h3>
+          <p class="text-sm text-primary mb-2">Lead Architect</p>
+          <p class="text-sm text-gray-600 mb-4">Brings architectural precision and creativity to our projects.</p>
+         
+        </div>
+      </div>
+
+      <!-- Sophia Martinez -->
+      <div class="team-member bg-white rounded-2xl overflow-hidden shadow-xl transition-transform transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+        <div class="h-64 relative">
+          <img
+            src="https://img.freepik.com/premium-photo/passport-photo-portrait-asian-smiling-woman_264197-7651.jpg"
+            alt="Sophia Martinez"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">Sophia Martinez</h3>
+          <p class="text-sm text-primary mb-2">Senior Interior Designer</p>
+          <p class="text-sm text-gray-600 mb-4">Blends aesthetics and function for modern, elegant spaces.</p>
+         
+        </div>
+      </div>
+
+      <!-- Michael Taylor -->
+      <div class="team-member bg-white rounded-2xl overflow-hidden shadow-xl transition-transform transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+        <div class="h-64 relative">
+          <img
+            src="https://www.shutterstock.com/image-photo/close-head-shot-confident-serious-600nw-1481322794.jpg"
+            alt="Michael Taylor"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">Michael Taylor</h3>
+          <p class="text-sm text-primary mb-2">3D Visualization Expert</p>
+          <p class="text-sm text-gray-600 mb-4">Creates realistic 3D visuals to bring concepts to life.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="mt-16 bg-white p-8 rounded-lg shadow-md">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div class="p-4">
+          <div class="text-4xl font-bold text-secondary mb-2">10+</div>
+          <p class="text-gray-600">Experienced Interior Designers</p>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-bold text-secondary mb-2">5+</div>
+          <p class="text-gray-600">Certified Architects</p>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-bold text-secondary mb-2">15+</div>
+          <p class="text-gray-600">Years Combined Experience</p>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-bold text-secondary mb-2">500+</div>
+          <p class="text-gray-600">Projects Completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Our Design Approach -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Design Approach</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We believe that design is more than aesthetics—it's about how a space makes you feel. Our approach combines creativity with functionality to create spaces that inspire.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative pl-12 md:pl-16">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item pb-12">
+                        <div class="timeline-dot"></div>
+                        <div class="ml-8 bg-light p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-3">1. Discovery & Listening</h3>
+                            <p class="text-gray-600">We begin by understanding your vision, needs, and lifestyle. This initial consultation helps us grasp your aesthetic preferences, functional requirements, and budget considerations.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item pb-12">
+                        <div class="timeline-dot"></div>
+                        <div class="ml-8 bg-light p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-3">2. Concept Development</h3>
+                            <p class="text-gray-600">Our designers create a comprehensive design concept that includes mood boards, color schemes, material selections, and preliminary space planning to bring your vision to life.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item pb-12">
+                        <div class="timeline-dot"></div>
+                        <div class="ml-8 bg-light p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-3">3. 3D Visualization</h3>
+                            <p class="text-gray-600">We create detailed 3D renderings of your space, allowing you to visualize the final result before any work begins. This step ensures alignment with your expectations and allows for refinements.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item pb-12">
+                        <div class="timeline-dot"></div>
+                        <div class="ml-8 bg-light p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-3">4. Detailed Planning</h3>
+                            <p class="text-gray-600">Our team develops detailed plans, including furniture layouts, material specifications, custom elements, and a comprehensive project timeline to guide the implementation process.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="ml-8 bg-light p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-3">5. Implementation & Styling</h3>
+                            <p class="text-gray-600">We oversee the execution of the design, coordinating with contractors and vendors to ensure quality. The final styling adds those personal touches that make a space truly feel like home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#" class="bg-white text-secondary px-8 py-3 rounded-md hover:bg-primary hover:text-white transition-colors text-center">Book a Consultation</a>
+                    <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md hover:bg-white hover:text-secondary transition-colors text-center">View Our Portfolio</a>
+                </div>
+        </div>
+    </section>
+
+  
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Adjust for fixed header
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-slideUp');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+        
+        // Set initial state for animations
+        document.querySelectorAll('.animate-slideUp').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'all 0.8s ease';
+        });
+        
+        // Listen for scroll events
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+    </script>
+
+    
+</html>

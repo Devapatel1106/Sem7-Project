@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .country-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+    .country-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .country-card h2 {
+      margin: 10px 0 5px;
+    }
+    .country-card p {
+      margin: 5px 0;
+    }
+    button {
+      padding: 10px 15px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Get Country Information</h1>
+  <button id="btn-country">Show Portugal Info</button>
+  <div id="countries" class="countries"></div>
+
+  <script>
+    const btn = document.getElementById('btn-country');
+    const countriesContainer = document.getElementById('countries');
+
+    btn.addEventListener('click', function () {
+      fetch('https://restcountries.com/v2/name/portugal')
+        .then(response => response.json())
+        .then(data => {
+          const country = data[0];
+          
+          countriesContainer.innerHTML = `
+            <div class="country-card">
+              <img src="${country.flag}" alt="Flag of ${country.name}">
+              <h2>${country.name}</h2>
+              <p><strong>Capital:</strong> ${country.capital}</p>
+              <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
+              <p><strong>Region:</strong> ${country.region}</p>
+            </div>
+          `;
+        })
+        .catch(err => {
+          countriesContainer.innerHTML = `<p style="color:red;">Error fetching data: ${err}</p>`;
+        });
+    });
+  </script>
+
+</body>
+</html>
